@@ -121,9 +121,8 @@ class RustTypeSystem(TypeSystem):
         self.register_type_mapping(
             TypeMapping(
                 python_type=int,
-                native_type="usize",
-                converter=lambda x: f"{x}usize"
-                if x >= 0 else f"({x} as usize)",
+                native_type="isize",
+                converter=lambda x: f"{x}usize" if x >= 0 else f"{x}isize", # fixed
             )
         )
         self.register_type_mapping(
@@ -158,7 +157,7 @@ class RustTypeSystem(TypeSystem):
         for item in collection:
             if isinstance(item, int):
                 elements.append(
-                    f"{item}usize" if item >= 0 else f"({item} as usize)"
+                    f"{item}usize" if item >= 0 else f"{item}isize"
                 )
             else:
                 elements.append(self.convert_to_native(item))
