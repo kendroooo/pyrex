@@ -7,7 +7,7 @@ and languages, extracting meaningful information from compiler output.
 import logging
 import re
 from pathlib import Path
-from typing import Dict, List, Optional, Any, Pattern, Tuple
+from typing import Dict, List, Optional, Any
 from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)

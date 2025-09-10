@@ -10,9 +10,8 @@ import shutil
 import subprocess
 import tempfile
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple
 from pyrex.exceptions import PyrexCompileError, PyrexRuntimeError
-from pyrex.utils.helpers import ensure_directory, clean_temp_files
 
 logger = logging.getLogger(__name__)
 

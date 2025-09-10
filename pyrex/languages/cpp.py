@@ -13,7 +13,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from pyrex.core.base import BaseCompiler, CompilerConfig
 from pyrex.core.types import CppTypeSystem
-from pyrex.exceptions import PyrexCompileError, PyrexRuntimeError
+from pyrex.exceptions import PyrexRuntimeError
 
 logger = logging.getLogger(__name__)
 

@@ -13,17 +13,16 @@ import threading
 from abc import ABC, abstractmethod
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple, Union
+from typing import Any, Dict, List, Optional, Tuple
 from pyrex.exceptions import (
     PyrexCompileError,
     PyrexRuntimeError,
-    PyrexSecurityError,
     PyrexTypeError,
 )
 from pyrex.utils.cache import CacheManager
 from pyrex.utils.security import SecurityManager
 from pyrex.utils.errors import ErrorParser
-from pyrex.utils.helpers import generate_temp_name, validate_timeout
+from pyrex.utils.helpers import validate_timeout
 
 logger = logging.getLogger(__name__)
 

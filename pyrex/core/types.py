@@ -6,7 +6,7 @@ for seamless integration between Python and compiled languages.
 
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Type, Union
+from typing import Any, Dict, Optional, Type, Union
 from pyrex.exceptions import PyrexTypeError
 
 
