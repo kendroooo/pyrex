@@ -84,17 +84,23 @@ print(result)
 ### Custom Compiler Settings
 ```python
 from pyrex.languages.rust import RustCompiler
+from pyrex.core.base import CompilerConfig
+
 
 compiler = RustCompiler(
-    compile_flags=["-O", "--edition", "2021"],
-    cache_dir="/tmp/pyrex_cache",
-    enable_security=True
+    config=CompilerConfig(
+        compile_flags=["-O", "--edition", "2021"],
+        cache_dir="/tmp/pyrex_cache",
+        enable_security=True
+    )
 )
+
 
 result = compiler.execute("""
     let result = (0..1_000_000).sum::<i64>();
     println!("Sum: {}", result);
 """)
+
 ```
 
 ### Error Handling
