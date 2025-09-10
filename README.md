@@ -83,7 +83,7 @@ print(result)
 
 ### Custom Compiler Settings
 ```python
-from pyrex import RustCompiler
+from pyrex.languages.rust import RustCompiler
 
 compiler = RustCompiler(
     compile_flags=["-O", "--edition", "2021"],
