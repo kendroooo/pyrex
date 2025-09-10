@@ -67,7 +67,7 @@ class RustCompiler(BaseCompiler):
             "cargo_version": None,
         }
 
-        # Get version information
+        
         if self.has_rustc:
             try:
                 result = subprocess.run(
