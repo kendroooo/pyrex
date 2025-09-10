@@ -4,7 +4,7 @@
 
 **Seamless inline Rust, C, and C++ execution inside Python — with enterprise-grade safety, performance, and simplicity**
 
-[![PyPI](https://img.shields.io/pypi/v/pyrex?style=for-the-badge&color=blue)](https://pypi.org/project/pyrex3/)
+[![PyPI](https://img.shields.io/pypi/v/pyrex3?style=for-the-badge&color=blue)](https://pypi.org/project/pyrex3/)
 
 *Write native Rust, C, and C++ code inline with Python. Automatically compiled, cached, and sandboxed — ready for production.*
 
@@ -107,7 +107,7 @@ print(result)
 
 ### Error Handling
 ```python
-from pyrex.exceptions import PyrexCompileError, PyrexRuntimeError
+from pyrex.exceptions import PyrexCompileError
 
 try:
     rust.execute("let x = ;")  # Invalid syntax
