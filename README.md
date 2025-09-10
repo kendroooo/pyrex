@@ -112,8 +112,7 @@ from pyrex.exceptions import PyrexCompileError, PyrexRuntimeError
 try:
     rust.execute("let x = ;")  # Invalid syntax
 except PyrexCompileError as e:
-    print(f"Compilation failed at line {e.line_number}: {e.message}")
-    print(f"Snippet:\n{e.code_snippet}")
+    print(f"Error:\n    {e}")
 ```
 
 ---
