@@ -471,12 +471,14 @@ int main(void) {{
         """Get the C code template with security features."""
         return """// Auto-generated C wrapper by Pyrex
 {headers}
-// Safety macros
-    if ((src) && (dst) && (size) > 0) {{ \\
+// safety macros (this shit fucked me over)
+#define SAFE_STRNCPY(dst, src, size) do { \\
+    if ((src) && (dst) && (size) > 0) { \\
         strncpy(dst, src, (size)-1); \\
         (dst)[(size)-1] = '\\0'; \\
-    }} \\
-}} while(0)
+    } \\
+} while(0)
+
 int main(void) {{
 {safety_checks}
 {variable_declarations}

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyrex3"
-version = "1.0.3"
+version = "1.0.4"
 description = "Lightning-fast multi-language code execution engine with security-first design"
 readme = "README.md"
 license = {text = "MIT"}
