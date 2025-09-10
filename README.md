@@ -55,7 +55,7 @@ from pyrex import c
 
 result = c.execute("""
     int result = x * y + z;
-    printf("Result: ```d\\n", result);
+    printf("Result: %d\\n", result);
 """, {"x": 10, "y": 20, "z": 5}, fast=True)
 
 print(result)  # "Result: 205"
