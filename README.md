@@ -73,6 +73,8 @@ result = cpp.execute("""
     for (int n : data) std::cout << n << " ";
     std::cout << std::endl;
 """, variables={"numbers": [64, 34, 25, 12, 22, 11, 90]})
+
+print(result)
 ```
 
 ---
