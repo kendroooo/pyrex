@@ -27,7 +27,7 @@
 ## 🛠️ Installation
 
 ```bash
-pip install pyrex
+pip install pyrex3
 ```
 
 **Requirements:**  
