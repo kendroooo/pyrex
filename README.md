@@ -101,6 +101,8 @@ result = compiler.execute("""
     println!("Sum: {}", result);
 """)
 
+print(result)
+
 ```
 
 ### Error Handling
