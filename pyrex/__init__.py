@@ -4,7 +4,7 @@ This library provides seamless integration for executing Rust, C, and C++
 code directly within Python applications with enterprise-grade safety and performance.
 """
 
-__version__ = "1.2.0"
+__version__ = "1.0.2"
 __author__ = "Luciano Correia"
 __email__ = "sudo@shiro.lol"
 __description__ = "Professional inline multi-language execution for Python"
