@@ -5,8 +5,6 @@
 **Seamless inline Rust, C, and C++ execution inside Python — with enterprise-grade safety, performance, and simplicity**
 
 [![PyPI](https://img.shields.io/pypi/v/pyrex?style=for-the-badge&color=blue)](https://pypi.org/project/pyrex3/)
-[![Python](https://img.shields.io/pypi/pyversions/pyrex?style=for-the-badge)](https://pypi.org/project/pyrex3/)
-[![License](https://img.shields.io/github/license/kendroooo/pyrex?style=for-the-badge)](https://github.com/kendroooo/pyrex/blob/main/LICENSE)
 
 *Write native Rust, C, and C++ code inline with Python. Automatically compiled, cached, and sandboxed — ready for production.*
 
