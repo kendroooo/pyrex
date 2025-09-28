@@ -2,27 +2,6 @@
 
 # 🚀 Pyrex
 
-**Seamless inline Rust, C, and C++ execution inside Python — with enterprise-grade safety, performance, and simplicity**
-
-[![PyPI](https://img.shields.io/pypi/v/pyrex3?style=for-the-badge&color=blue)](https://pypi.org/project/pyrex3/)
-
-*Write native Rust, C, and C++ code inline with Python. Automatically compiled, cached, and sandboxed — ready for production.*
-
-</div>
-
----
-
-## ✨ Features
-
-- 🦀 **Rust-first** – Full Rust support with automatic compilation  
-- ⚡ **C & C++ support** – Modern C/C++ with type-safe bridging  
-- 🔒 **Enterprise security** – Sandboxed execution, validation, and resource limits  
-- 🚀 **Smart caching** – Compiles once, executes instantly on repeat  
-- 🎯 **Type-safe** – Automatic Python ↔ native type conversion  
-- 📊 **Detailed errors** – Rich compile/runtime diagnostics with context  
-- 🔧 **Zero config** – Works out of the box, no setup needed  
-
----
 
 ## 🛠️ Installation
 
@@ -117,16 +96,6 @@ except PyrexCompileError as e:
 
 ---
 
-## 🔒 Security
-
-Pyrex enforces **enterprise-grade safety** out of the box:
-- Static analysis for dangerous patterns  
-- Sandboxed execution in temp directories  
-- Input sanitization & type validation  
-- Memory, CPU, and timeout limits  
-
----
-
 ## 🎯 Type Mapping
 
 | Python Type  | Rust        | C           | C++                  |
@@ -139,7 +108,7 @@ Pyrex enforces **enterprise-grade safety** out of the box:
 
 ---
 
-## ⚡ Performance
+## Performance
 
 - **First run:** Compiles & caches the binary  
 - **Next runs:** Executes instantly (10–100× faster)  
@@ -169,15 +138,6 @@ Pyrex enforces **enterprise-grade safety** out of the box:
 
 ---
 
-## 🤝 Contributing
-
-1. Fork this repository  
-2. Create a feature branch: `git checkout -b feature/my-feature`
-3. Make your changes  
-4. Submit a pull request 🎉  
-
----
-
 ## 📄 License
 
 Licensed under the MIT License. See the [LICENSE](LICENSE) file.
@@ -187,5 +147,3 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file.
 ## 🙏 Acknowledgments
 
 - Built with ❤️ by Luciano Correia  
-- Inspired by the need for **frictionless multi-language execution**  
-- Thanks to all contributors and early testers  
