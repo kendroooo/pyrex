@@ -146,4 +146,7 @@ Licensed under the MIT License. See the [LICENSE](LICENSE) file.
 
 ## 🙏 Acknowledgments
 
-- Built with ❤️ by Luciano Correia  
+- Built with ❤️ by Luciano Correia
+- 
+
+(dont mind this file, its made by chatgpt 💔)
